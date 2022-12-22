@@ -1,0 +1,8 @@
+version: '3.7'
+
+services:
+  sentiment_analysis:
+    build:
+      context: ./
+    ports:
+      - 7070:5000

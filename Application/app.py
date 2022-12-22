@@ -4,6 +4,8 @@ import re
 import numpy as np
 import pandas as pd
 import warnings
+import nltk
+nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 warnings.filterwarnings('ignore')
@@ -75,4 +77,4 @@ def my_form_post():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')
