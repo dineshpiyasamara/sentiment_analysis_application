@@ -3,8 +3,10 @@ import pickle
 import re
 import numpy as np
 import pandas as pd
+import warnings
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
+warnings.filterwarnings('ignore')
 
 lemmatizer = WordNetLemmatizer()
 sw = stopwords.words("english")
